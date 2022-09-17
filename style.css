@@ -1,0 +1,263 @@
+aside
+{
+
+    border: 1px solid black;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    position: fixed;
+    background-color: silver;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#HeaderRow {
+    justify-content: space-around;
+}
+
+ul li {
+    list-style: none;
+    font-size: 15px;
+    font-family: sans-serif, auto;
+    font-weight: bold;
+
+}
+
+ul {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 995px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #hideonsmall {
+        visibility: hidden;
+    }
+
+    #hideonsmall {
+        display: none;
+    }
+
+    #hideonsmall {
+        visibility: visible;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+    h2 {
+        vertical-align: center;
+        text-align: center;
+    }
+
+    * {
+        font-family: "Raleway";
+        box-sizing: border-box;
+    }
+
+    .top-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00BAF0;
+        background: linear-gradient(to left, #f46b45, #eea849);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #FFF;
+        height: 50px;
+        padding: 1em;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .menu>li {
+        margin: 0 1rem;
+        overflow: hidden;
+    }
+
+    .menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+    }
+
+    .menu-button::before {
+        content: '';
+        margin-top: -8px;
+    }
+
+    .menu-button::after {
+        content: '';
+        margin-top: 8px;
+    }
+
+    #menu-toggle:checked+.menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+    }
+
+    #menu-toggle:checked+.menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    #menu-toggle:checked+.menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+    }
+
+    @media (max-width: 995px) {
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-button-container {
+            display: flex;
+        }
+
+        .menu {
+            position: absolute;
+            top: 0;
+            margin-top: 50px;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menu-toggle~.menu li {
+            height: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        #menu-toggle:checked~.menu li {
+            border: 1px solid #333;
+            height: 2.5em;
+            padding: 0.5em;
+            transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .menu>li {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0.5em 0;
+            width: 100%;
+            color: white;
+            background-color: #222;
+        }
+
+        .menu>li:hover {
+            background-color: rgb(255, 0, 0);
+        }
+
+        .menu>li:not(:last-child) {
+            border-bottom: 1px solid #444;
+        }
+    }
+}
+
+@media only screen and (min-width: 995px) {
+
+    #hideonbig {
+        display: none;
+    }
+
+}
+
+#line {
+    border-left: 0.5px solid rgba(0, 0, 0, 0.281);
+    margin-left: 12px;
+}
+
+@media (max-width: 1232px) {
+
+    ul li,
+    a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1330px) {
+
+    ul li,
+    a {
+        font-size: 13px;
+    }
+}
+
+#tittle {
+    font-weight: bold;
+    color: red;
+    font-size: 50px;
+}
+
+.card-login {
+    width: 541px;
+    height: 400px;
+    background-color: red;
+}
+
+.login-row{
+    text-align: center;
+
+}
+
+h4 {
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+input
+{
+    text-align: center;
+    padding: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.493);
+}
