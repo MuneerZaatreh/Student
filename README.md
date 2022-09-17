@@ -1,2 +1,1 @@
-# Student
-HTML CSS PHP PROJECT
+# PHP Student Management Project
